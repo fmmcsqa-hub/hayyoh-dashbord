@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Weekly Report — Hayyoh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/preferences.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span class="brand-mark" aria-hidden="true">H</span>
+          <div class="brand-text"><span class="brand-name">Hayyoh</span><span class="brand-caption"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span>
+          </div>
+          <button type="button" class="icon-button sidebar-close" id="sidebar-close" aria-label="Close navigation" data-i18n-label="closeNavigation">✕</button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation" data-i18n-label="mainNavigation">
+          <p class="nav-section"><span data-en="Overview" data-ar="نظرة عامة">Overview</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span class="nav-label"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span></a></li>
+            <li><a class="nav-link is-active" href="weekly-report.html" aria-current="page"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span class="nav-label"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></span></a></li>
+          </ul>
+          <p class="nav-section"><span data-en="Performance" data-ar="الأداء">Performance</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="users-engagement.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg><span class="nav-label"><span data-en="Users &amp; Engagement" data-ar="المستخدمون والتفاعل">Users &amp; Engagement</span></span></a></li>
+            <li><a class="nav-link" href="events-tickets.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/></svg><span class="nav-label"><span data-en="Events &amp; Tickets" data-ar="الفعاليات والتذاكر">Events &amp; Tickets</span></span></a></li>
+            <li><a class="nav-link" href="points-loyalty.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg><span class="nav-label"><span data-en="Points &amp; Loyalty" data-ar="النقاط والولاء">Points &amp; Loyalty</span></span></a></li>
+            <li><a class="nav-link" href="offers-rewards.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg><span class="nav-label"><span data-en="Offers &amp; Rewards" data-ar="العروض والمكافآت">Offers &amp; Rewards</span></span></a></li>
+            <li><a class="nav-link" href="merchants-partners.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><span class="nav-label"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></span></a></li>
+            <li><a class="nav-link" href="finance-value.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg><span class="nav-label"><span data-en="Finance &amp; Value" data-ar="المالية والقيمة">Finance &amp; Value</span></span></a></li>
+            <li><a class="nav-link" href="operations-governance.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg><span class="nav-label"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></span></a></li>
+            <li><a class="nav-link" href="near-redemption.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5L21 12.5 12.5 21z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span class="nav-label"><span data-en="Near-Redemption &amp; NBA" data-ar="القرب من العروض">Near-Redemption &amp; NBA</span></span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <button type="button" class="sidebar-collapse" id="sidebar-collapse" aria-pressed="false" aria-label="Collapse sidebar"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg><span class="nav-label"><span data-en="Collapse" data-ar="طي القائمة">Collapse</span></span></button>
+        </div>
+      </aside>
+      <div class="app-main">
+        <header class="app-header">
+          <button type="button" class="icon-button menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation" data-i18n-label="openNavigation"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="header-brand"><span class="brand-mark brand-mark-small" aria-hidden="true">H</span><span class="brand-name">Hayyoh</span>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="icon-button" id="theme-toggle" aria-label="Switch to light mode"><svg class="icon-sun" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><span class="visually-hidden" id="theme-status" aria-live="polite"></span>
+            <button type="button" class="icon-button language-toggle" id="language-toggle" lang="en" aria-label="Switch to Arabic">AR</button><span class="avatar" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          </div>
+        </header>
+        <div class="page-toolbar">
+          <div class="page-heading">
+            <nav aria-label="Breadcrumb" data-i18n-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="index.html"><span data-en="Home" data-ar="الرئيسية">Home</span></a></li>
+                <li aria-current="page"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></li>
+              </ol>
+            </nav>
+            <h1 class="page-title"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></h1>
+            <p class="page-description"><span data-en="A standing weekly view mirroring the shared report: attendance, points, service and redemptions for the week." data-ar="عرض أسبوعي ثابت يعكس التقرير المشترك: الحضور والنقاط والخدمة والاستبدالات خلال الأسبوع.">A standing weekly view mirroring the shared report: attendance, points, service and redemptions for the week.</span></p>
+          </div>
+          <div class="period-picker" id="period-picker">
+            <button type="button" class="period-trigger" id="period-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="period-menu" aria-label="Select reporting period" data-i18n-label="selectPeriod"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span class="period-label" id="period-label">Since launch</span><svg class="period-chevron" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="period-menu" id="period-menu" role="dialog" aria-labelledby="period-heading" hidden>
+              <p class="period-heading" id="period-heading"><span data-en="Period" data-ar="الفترة">Period</span></p>
+              <div class="period-options" role="radiogroup" aria-labelledby="period-heading">
+                <button type="button" role="radio" class="period-option" data-period="all" aria-checked="true"><span class="period-check" aria-hidden="true">✓</span><span data-en="Since launch" data-ar="منذ الإطلاق">Since launch</span></button>
+                <button type="button" role="radio" class="period-option" data-period="w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="This week" data-ar="هذا الأسبوع">This week</span></button>
+                <button type="button" role="radio" class="period-option" data-period="4w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 4 weeks" data-ar="آخر 4 أسابيع">Last 4 weeks</span></button>
+                <button type="button" role="radio" class="period-option" data-period="m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last month" data-ar="الشهر الماضي">Last month</span></button>
+                <button type="button" role="radio" class="period-option" data-period="3m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 3 months" data-ar="آخر 3 أشهر">Last 3 months</span></button>
+                <button type="button" role="radio" class="period-option" data-period="custom" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Custom range" data-ar="فترة مخصصة">Custom range</span></button>
+              </div>
+              <div class="period-custom" id="period-custom" hidden>
+                <label class="period-field"><span data-en="From" data-ar="من">From</span><input type="date" id="period-from" value="2026-08-16" min="2026-08-16" max="2026-10-11"></label>
+                <label class="period-field"><span data-en="To" data-ar="إلى">To</span><input type="date" id="period-to" value="2026-10-11" min="2026-08-16" max="2026-10-11"></label>
+                <p class="period-error" id="period-error" role="alert" hidden></p>
+                <p class="period-hint"><span data-en="Available data: 16 Aug to 11 Oct 2026." data-ar="البيانات المتاحة: 16 أغسطس إلى 11 أكتوبر 2026.">Available data: 16 Aug to 11 Oct 2026.</span></p>
+                <div class="period-actions">
+                  <button type="button" class="button button-light" id="period-cancel"><span data-en="Cancel" data-ar="إلغاء">Cancel</span></button>
+                  <button type="button" class="button button-primary" id="period-apply"><span data-en="Apply" data-ar="تطبيق">Apply</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="app-content" id="main-content">
+          <div class="alert alert-info" role="note"><span class="alert-mark" aria-hidden="true">◆</span>
+            <p><span data-en="Week-on-week comparison is not provided for most metrics; month-on-month attendance (-2.5%) is the stated trend." data-ar="لا تتوفر مقارنة أسبوعية لمعظم المؤشرات؛ الاتجاه المُعلن هو الحضور الشهري (-2.5%).">Week-on-week comparison is not provided for most metrics; month-on-month attendance (-2.5%) is the stated trend.</span></p>
+          </div>
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="matches-played" role="button" tabindex="0" aria-label="Matches played details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Matches played" data-ar="المباريات المُقامة">Matches played</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">QSL matches in the reporting week.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>
+              </div>
+              <p class="kpi-value">6</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 4.3%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,21.4 27.4,18.0 41.1,15.0 54.9,12.8 68.6,8.6 82.3,6.0 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-info"><span class="status-mark" aria-hidden="true">◆</span>Week 5</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">4-10 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="stadium-attendance" role="button" tabindex="0" aria-label="Stadium attendance details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Stadium attendance" data-ar="حضور الملعب">Stadium attendance</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Total Week-5 attendance.</span></span></span><span class="kpi-icon kpi-icon-blue"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg></span>
+              </div>
+              <p class="kpi-value">47,854</p>
+              <div class="kpi-trend"><span class="delta is-negative">▼ 2.5%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,3.0 12.0,11.5 24.0,13.8 36.0,17.1 48.0,19.5 60.0,21.4 72.0,22.8 84.0,17.3 96.0,23.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="23.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>-2.5% MoM</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Week 5</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="hayyoh-check-ins" role="button" tabindex="0" aria-label="Hayyoh check-ins details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Hayyoh check-ins" data-ar="تسجيلات الدخول عبر حيّوه">Hayyoh check-ins</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Check-ins through Hayyoh across 6 matches.</span></span></span><span class="kpi-icon kpi-icon-amber"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
+              </div>
+              <p class="kpi-value">36,614</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 3.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.8 27.4,17.1 41.1,14.2 54.9,10.5 68.6,9.1 82.3,5.8 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>76.5% of attendance</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Week 5</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="points-awarded" role="button" tabindex="0" aria-label="Points awarded details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Points awarded" data-ar="النقاط الممنوحة">Points awarded</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Hayyoh points awarded this week.</span></span></span><span class="kpi-icon kpi-icon-purple"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg></span>
+              </div>
+              <p class="kpi-value">24.1m</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 4.4%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,21.2 27.4,18.7 41.1,15.4 54.9,11.5 68.6,8.6 82.3,6.0 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-info"><span class="status-mark" aria-hidden="true">◆</span>Week 5</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Week 5</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="calls-received" role="button" tabindex="0" aria-label="Calls received details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Calls received" data-ar="المكالمات الواردة">Calls received</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Inbound contact-centre calls.</span></span></span><span class="kpi-icon kpi-icon-blue"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></svg></span>
+              </div>
+              <p class="kpi-value">1,754</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 6.1%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.1 27.4,18.6 41.1,14.2 54.9,10.9 68.6,7.6 82.3,7.2 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>+405%</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">4-10 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="first-contact-resolution" role="button" tabindex="0" aria-label="First contact resolution details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="First contact resolution" data-ar="الحل من أول تواصل">First contact resolution</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Calls resolved first time.</span></span></span><span class="kpi-icon kpi-icon-red"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
+              </div>
+              <p class="kpi-value">47.4%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 5.0%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.0 27.4,17.2 41.1,15.4 54.9,12.6 68.6,9.3 82.3,6.4 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-red"><span class="status-mark" aria-hidden="true">■</span><span data-en="Critical" data-ar="حرج">Critical</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 70%</p>
+              <div class="kpi-footer"><span class="kpi-period">4-10 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="emails-answered" role="button" tabindex="0" aria-label="Emails answered details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Emails answered" data-ar="الرسائل المُجاب عليها">Emails answered</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Share of emails answered this week.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
+              </div>
+              <p class="kpi-value">95.5%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 5.0%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.1 27.4,17.9 41.1,14.2 54.9,13.1 68.6,8.7 82.3,6.5 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">4-10 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="rewards-redeemed-week" role="button" tabindex="0" aria-label="Rewards redeemed (week) details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Rewards redeemed (week)" data-ar="المكافآت المستبدَلة (الأسبوع)">Rewards redeemed (week)</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Rewards redeemed 4-11 Oct for 417,300 points.</span></span></span><span class="kpi-icon kpi-icon-purple"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg></span>
+              </div>
+              <p class="kpi-value">25</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 3.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.9 27.4,16.0 41.1,15.4 54.9,12.6 68.6,9.8 82.3,5.6 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-info"><span class="status-mark" aria-hidden="true">◆</span>Week</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">4-11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Tickets by match: awarded vs not awarded" data-ar="التذاكر حسب المباراة: مُنحت مقابل لم تُمنح">Tickets by match: awarded vs not awarded</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="wkMatch" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="wkMatch" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="wkMatch" class="chart" role="img" aria-label="Tickets by match: awarded vs not awarded"></div>
+              <div id="wkMatch-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Tickets by match: awarded vs not awarded</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Match</th>
+                        <th scope="col">Hayyoh tickets</th>
+                        <th scope="col">Awarded</th>
+                        <th scope="col">Award %</th>
+                        <th scope="col">Not awarded</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Al Shamal v Al Duhail</td>
+                        <td>5,755</td>
+                        <td>4,948</td>
+                        <td>86%</td>
+                        <td>807</td>
+                      </tr>
+                      <tr>
+                        <td>Al Wakrah v Al Gharafa</td>
+                        <td>6,757</td>
+                        <td>5,284</td>
+                        <td>78%</td>
+                        <td>1,473</td>
+                      </tr>
+                      <tr>
+                        <td>Qatar SC v Al Rayyan</td>
+                        <td>6,574</td>
+                        <td>5,917</td>
+                        <td>90%</td>
+                        <td>657</td>
+                      </tr>
+                      <tr>
+                        <td>Al Sadd v Al Arabi</td>
+                        <td>6,613</td>
+                        <td>5,951</td>
+                        <td>90%</td>
+                        <td>662</td>
+                      </tr>
+                      <tr>
+                        <td>Al Shahania v Lusail</td>
+                        <td>6,754</td>
+                        <td>6,146</td>
+                        <td>91%</td>
+                        <td>608</td>
+                      </tr>
+                      <tr>
+                        <td>Al Ahli v Al Sailiya</td>
+                        <td>6,441</td>
+                        <td>5,861</td>
+                        <td>91%</td>
+                        <td>580</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title">Inquiries by category</h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="wkCat" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="wkCat" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="wkCat" class="chart" role="img" aria-label="Inquiries by category"></div>
+              <div id="wkCat-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Inquiries by category</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Inquiry category</th>
+                        <th scope="col">Calls</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Points &amp; Rewards</td>
+                        <td>752</td>
+                      </tr>
+                      <tr>
+                        <td>Other</td>
+                        <td>643</td>
+                      </tr>
+                      <tr>
+                        <td>Ticket purchase</td>
+                        <td>65</td>
+                      </tr>
+                      <tr>
+                        <td>Product info &amp; offers</td>
+                        <td>33</td>
+                      </tr>
+                      <tr>
+                        <td>Registration &amp; login</td>
+                        <td>29</td>
+                      </tr>
+                      <tr>
+                        <td>Ticket not showing</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>Dependants</td>
+                        <td>9</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th scope="row">Total answered</th>
+                        <td>1,542</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Attendance by week" data-ar="الحضور أسبوعياً">Attendance by week</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="wkAtt" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="wkAtt" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="wkAtt" class="chart" role="img" aria-label="Attendance by week"></div>
+              <div id="wkAtt-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Attendance by week</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Attendance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>52,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>50,300</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>49,800</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>49,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>48,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>48,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>47,900</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>49,060</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>47,854</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Points redeemed by week" data-ar="النقاط المستبدَلة أسبوعياً">Points redeemed by week</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="wkRed" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="wkRed" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="wkRed" class="chart" role="img" aria-label="Points redeemed by week"></div>
+              <div id="wkRed-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Points redeemed by week</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Redeemed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>4,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>63,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>201,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>663,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>403,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>312,400</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>109,800</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>352,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>65,100</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th scope="row">Total</th>
+                        <td>2,174,300</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card">
+              <h2 class="card-title"><span data-en="Highlights" data-ar="أبرز النقاط">Highlights</span></h2>
+              <ul class='bul'>
+                <li><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span> 76.5% of attendance Hayyoh-linked; dependants 48% of Hayyoh tickets.</li>
+                <li><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span> 25 rewards redeemed for 417,300 points.</li>
+                <li><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span> Emails answered 95.5%.</li>
+              </ul>
+            </section>
+            <section class="card">
+              <h2 class="card-title"><span data-en="Focus areas" data-ar="مجالات التركيز">Focus areas</span></h2>
+              <ul class='bul'>
+                <li><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Attention" data-ar="يحتاج انتباه">Attention</span></span> First-contact resolution 47.4%; repeat callers 78.3%.</li>
+                <li><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Attention" data-ar="يحتاج انتباه">Attention</span></span> Recover not-awarded counts for 9-10 Oct matches.</li>
+                <li><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Attention" data-ar="يحتاج انتباه">Attention</span></span> Encourage more registrations.</li>
+              </ul>
+            </section>
+          </div>
+        </main>
+        <footer class="app-footer"><span data-en="Hayyoh · Weekly Report" data-ar="حيّوه · التقرير الأسبوعي">Hayyoh · Weekly Report</span>
+        </footer>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="kpi-drawer" role="dialog" aria-modal="true" aria-labelledby="kpi-drawer-title" aria-label="Details" data-i18n-label="details"></aside>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/period-picker.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/pages/weekly-report.js"></script>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Merchants &amp; Partners — Hayyoh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/preferences.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span class="brand-mark" aria-hidden="true">H</span>
+          <div class="brand-text"><span class="brand-name">Hayyoh</span><span class="brand-caption"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span>
+          </div>
+          <button type="button" class="icon-button sidebar-close" id="sidebar-close" aria-label="Close navigation" data-i18n-label="closeNavigation">✕</button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation" data-i18n-label="mainNavigation">
+          <p class="nav-section"><span data-en="Overview" data-ar="نظرة عامة">Overview</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span class="nav-label"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span></a></li>
+            <li><a class="nav-link" href="weekly-report.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span class="nav-label"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></span></a></li>
+          </ul>
+          <p class="nav-section"><span data-en="Performance" data-ar="الأداء">Performance</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="users-engagement.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg><span class="nav-label"><span data-en="Users &amp; Engagement" data-ar="المستخدمون والتفاعل">Users &amp; Engagement</span></span></a></li>
+            <li><a class="nav-link" href="events-tickets.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/></svg><span class="nav-label"><span data-en="Events &amp; Tickets" data-ar="الفعاليات والتذاكر">Events &amp; Tickets</span></span></a></li>
+            <li><a class="nav-link" href="points-loyalty.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg><span class="nav-label"><span data-en="Points &amp; Loyalty" data-ar="النقاط والولاء">Points &amp; Loyalty</span></span></a></li>
+            <li><a class="nav-link" href="offers-rewards.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg><span class="nav-label"><span data-en="Offers &amp; Rewards" data-ar="العروض والمكافآت">Offers &amp; Rewards</span></span></a></li>
+            <li><a class="nav-link is-active" href="merchants-partners.html" aria-current="page"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><span class="nav-label"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></span></a></li>
+            <li><a class="nav-link" href="finance-value.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg><span class="nav-label"><span data-en="Finance &amp; Value" data-ar="المالية والقيمة">Finance &amp; Value</span></span></a></li>
+            <li><a class="nav-link" href="operations-governance.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg><span class="nav-label"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></span></a></li>
+            <li><a class="nav-link" href="near-redemption.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5L21 12.5 12.5 21z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span class="nav-label"><span data-en="Near-Redemption &amp; NBA" data-ar="القرب من العروض">Near-Redemption &amp; NBA</span></span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <button type="button" class="sidebar-collapse" id="sidebar-collapse" aria-pressed="false" aria-label="Collapse sidebar"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg><span class="nav-label"><span data-en="Collapse" data-ar="طي القائمة">Collapse</span></span></button>
+        </div>
+      </aside>
+      <div class="app-main">
+        <header class="app-header">
+          <button type="button" class="icon-button menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation" data-i18n-label="openNavigation"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="header-brand"><span class="brand-mark brand-mark-small" aria-hidden="true">H</span><span class="brand-name">Hayyoh</span>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="icon-button" id="theme-toggle" aria-label="Switch to light mode"><svg class="icon-sun" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><span class="visually-hidden" id="theme-status" aria-live="polite"></span>
+            <button type="button" class="icon-button language-toggle" id="language-toggle" lang="en" aria-label="Switch to Arabic">AR</button><span class="avatar" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          </div>
+        </header>
+        <div class="page-toolbar">
+          <div class="page-heading">
+            <nav aria-label="Breadcrumb" data-i18n-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="index.html"><span data-en="Home" data-ar="الرئيسية">Home</span></a></li>
+                <li aria-current="page"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></li>
+              </ol>
+            </nav>
+            <h1 class="page-title"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></h1>
+            <p class="page-description"><span data-en="Partner contribution, cost, concentration, service quality and value." data-ar="مساهمة الشركاء والتكلفة والتركّز وجودة الخدمة والقيمة.">Partner contribution, cost, concentration, service quality and value.</span></p>
+          </div>
+          <div class="period-picker" id="period-picker">
+            <button type="button" class="period-trigger" id="period-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="period-menu" aria-label="Select reporting period" data-i18n-label="selectPeriod"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span class="period-label" id="period-label">Since launch</span><svg class="period-chevron" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="period-menu" id="period-menu" role="dialog" aria-labelledby="period-heading" hidden>
+              <p class="period-heading" id="period-heading"><span data-en="Period" data-ar="الفترة">Period</span></p>
+              <div class="period-options" role="radiogroup" aria-labelledby="period-heading">
+                <button type="button" role="radio" class="period-option" data-period="all" aria-checked="true"><span class="period-check" aria-hidden="true">✓</span><span data-en="Since launch" data-ar="منذ الإطلاق">Since launch</span></button>
+                <button type="button" role="radio" class="period-option" data-period="w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="This week" data-ar="هذا الأسبوع">This week</span></button>
+                <button type="button" role="radio" class="period-option" data-period="4w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 4 weeks" data-ar="آخر 4 أسابيع">Last 4 weeks</span></button>
+                <button type="button" role="radio" class="period-option" data-period="m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last month" data-ar="الشهر الماضي">Last month</span></button>
+                <button type="button" role="radio" class="period-option" data-period="3m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 3 months" data-ar="آخر 3 أشهر">Last 3 months</span></button>
+                <button type="button" role="radio" class="period-option" data-period="custom" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Custom range" data-ar="فترة مخصصة">Custom range</span></button>
+              </div>
+              <div class="period-custom" id="period-custom" hidden>
+                <label class="period-field"><span data-en="From" data-ar="من">From</span><input type="date" id="period-from" value="2026-08-16" min="2026-08-16" max="2026-10-11"></label>
+                <label class="period-field"><span data-en="To" data-ar="إلى">To</span><input type="date" id="period-to" value="2026-10-11" min="2026-08-16" max="2026-10-11"></label>
+                <p class="period-error" id="period-error" role="alert" hidden></p>
+                <p class="period-hint"><span data-en="Available data: 16 Aug to 11 Oct 2026." data-ar="البيانات المتاحة: 16 أغسطس إلى 11 أكتوبر 2026.">Available data: 16 Aug to 11 Oct 2026.</span></p>
+                <div class="period-actions">
+                  <button type="button" class="button button-light" id="period-cancel"><span data-en="Cancel" data-ar="إلغاء">Cancel</span></button>
+                  <button type="button" class="button button-primary" id="period-apply"><span data-en="Apply" data-ar="تطبيق">Apply</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="app-content" id="main-content">
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="active-partners" role="button" tabindex="0" aria-label="Active partners details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Active partners" data-ar="الشركاء النشطون">Active partners</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Reward partners with redemption activity.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></span>
+              </div>
+              <p class="kpi-value">7</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 3.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.0 27.4,16.3 41.1,14.6 54.9,12.2 68.6,8.9 82.3,5.5 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Active" data-ar="نشط">Active</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="top-partner-volume" role="button" tabindex="0" aria-label="Top partner (volume) details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Top partner (volume)" data-ar="الشريك الأكبر حجماً">Top partner (volume)</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">94 of 193 redemptions at ~QAR 242 each.</span></span></span><span class="kpi-icon kpi-icon-blue"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
+              </div>
+              <p class="kpi-value">Aspire Katara</p>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Leader" data-ar="الأعلى">Leader</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="highest-cost-share" role="button" tabindex="0" aria-label="Highest cost share details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Highest cost share" data-ar="الأعلى حصة تكلفة">Highest cost share</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">41 redemptions, 38% of reward cost (QAR 91,200).</span></span></span><span class="kpi-icon kpi-icon-amber"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg></span>
+              </div>
+              <p class="kpi-value">Ooredoo Nojoom</p>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Costly" data-ar="مرتفع التكلفة">Costly</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="lowest-rated-partner" role="button" tabindex="0" aria-label="Lowest-rated partner details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Lowest-rated partner" data-ar="الشريك الأدنى تقييماً">Lowest-rated partner</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Well below the 3.4-star average.</span></span></span><span class="kpi-icon kpi-icon-red"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></span>
+              </div>
+              <p class="kpi-value">Vodafone 1.6★</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 5.3%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,21.6 27.4,17.1 41.1,15.7 54.9,13.0 68.6,10.3 82.3,6.6 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-red"><span class="status-mark" aria-hidden="true">■</span><span data-en="Review" data-ar="مراجعة">Review</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 3.4★</p>
+              <div class="kpi-footer"><span class="kpi-period">11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <section class="card">
+            <h2 class="card-title"><span data-en="Partner performance" data-ar="أداء الشركاء">Partner performance</span></h2>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Partner</th>
+                    <th scope="col">Redemptions</th>
+                    <th scope="col">Points</th>
+                    <th scope="col">Cost QAR</th>
+                    <th scope="col">QAR/point</th>
+                    <th scope="col">Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Aspire Katara Hospitality</td>
+                    <td>94</td>
+                    <td>656,600</td>
+                    <td>22,770</td>
+                    <td>0.035</td>
+                    <td>3.7★</td>
+                  </tr>
+                  <tr>
+                    <td>Ooredoo Nojoom</td>
+                    <td>41</td>
+                    <td>621,000</td>
+                    <td>91,200</td>
+                    <td>0.147</td>
+                    <td>3.3★</td>
+                  </tr>
+                  <tr>
+                    <td>Vodafone iPoints</td>
+                    <td>24</td>
+                    <td>187,400</td>
+                    <td>17,640</td>
+                    <td>0.094</td>
+                    <td>1.6★</td>
+                  </tr>
+                  <tr>
+                    <td>Blue Saloon</td>
+                    <td>22</td>
+                    <td>336,500</td>
+                    <td>57,713</td>
+                    <td>0.172</td>
+                    <td>5.0★</td>
+                  </tr>
+                  <tr>
+                    <td>Hayyoh</td>
+                    <td>9</td>
+                    <td>325,000</td>
+                    <td>46,691</td>
+                    <td>0.144</td>
+                    <td>5.0★</td>
+                  </tr>
+                  <tr>
+                    <td>InterContinental</td>
+                    <td>2</td>
+                    <td>22,000</td>
+                    <td>900</td>
+                    <td>0.041</td>
+                    <td>–</td>
+                  </tr>
+                  <tr>
+                    <td>Qatar Airways</td>
+                    <td>1</td>
+                    <td>25,800</td>
+                    <td>2,730</td>
+                    <td>0.106</td>
+                    <td>5.0★</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td>193</td>
+                    <td>2,174,300</td>
+                    <td>239,644</td>
+                    <td>0.110</td>
+                    <td>3.4</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </section>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Points by partner" data-ar="النقاط حسب الشريك">Points by partner</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="mePts" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="mePts" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="mePts" class="chart" role="img" aria-label="Points by partner"></div>
+              <div id="mePts-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Points by partner</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Partner</th>
+                        <th scope="col">Points</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aspire Katara Hospitality</td>
+                        <td>656,600</td>
+                      </tr>
+                      <tr>
+                        <td>Ooredoo Nojoom</td>
+                        <td>621,000</td>
+                      </tr>
+                      <tr>
+                        <td>Vodafone iPoints</td>
+                        <td>187,400</td>
+                      </tr>
+                      <tr>
+                        <td>Blue Saloon</td>
+                        <td>336,500</td>
+                      </tr>
+                      <tr>
+                        <td>Hayyoh</td>
+                        <td>325,000</td>
+                      </tr>
+                      <tr>
+                        <td>InterContinental</td>
+                        <td>22,000</td>
+                      </tr>
+                      <tr>
+                        <td>Qatar Airways</td>
+                        <td>25,800</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Cost by partner" data-ar="التكلفة حسب الشريك">Cost by partner</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="meCost" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="meCost" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="meCost" class="chart" role="img" aria-label="Cost by partner"></div>
+              <div id="meCost-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Cost by partner</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Partner</th>
+                        <th scope="col">Cost QAR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aspire Katara Hospitality</td>
+                        <td>22,770</td>
+                      </tr>
+                      <tr>
+                        <td>Ooredoo Nojoom</td>
+                        <td>91,200</td>
+                      </tr>
+                      <tr>
+                        <td>Vodafone iPoints</td>
+                        <td>17,640</td>
+                      </tr>
+                      <tr>
+                        <td>Blue Saloon</td>
+                        <td>57,713</td>
+                      </tr>
+                      <tr>
+                        <td>Hayyoh</td>
+                        <td>46,691</td>
+                      </tr>
+                      <tr>
+                        <td>InterContinental</td>
+                        <td>900</td>
+                      </tr>
+                      <tr>
+                        <td>Qatar Airways</td>
+                        <td>2,730</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Redemptions by partner" data-ar="الاستبدالات حسب الشريك">Redemptions by partner</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="meVol" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="meVol" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="meVol" class="chart" role="img" aria-label="Redemptions by partner"></div>
+              <div id="meVol-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Redemptions by partner</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Partner</th>
+                        <th scope="col">Redemptions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aspire Katara Hospitality</td>
+                        <td>94</td>
+                      </tr>
+                      <tr>
+                        <td>Ooredoo Nojoom</td>
+                        <td>41</td>
+                      </tr>
+                      <tr>
+                        <td>Vodafone iPoints</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>Blue Saloon</td>
+                        <td>22</td>
+                      </tr>
+                      <tr>
+                        <td>Hayyoh</td>
+                        <td>9</td>
+                      </tr>
+                      <tr>
+                        <td>InterContinental</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Qatar Airways</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Rating by partner" data-ar="التقييم حسب الشريك">Rating by partner</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="meRate" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="meRate" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="meRate" class="chart" role="img" aria-label="Rating by partner"></div>
+              <div id="meRate-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Rating by partner</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Partner</th>
+                        <th scope="col">Rating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aspire Katara Hospitality</td>
+                        <td>3.7</td>
+                      </tr>
+                      <tr>
+                        <td>Ooredoo Nojoom</td>
+                        <td>3.3</td>
+                      </tr>
+                      <tr>
+                        <td>Vodafone iPoints</td>
+                        <td>1.6</td>
+                      </tr>
+                      <tr>
+                        <td>Blue Saloon</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>Hayyoh</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>InterContinental</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Qatar Airways</td>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2 decision-grid">
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg> <span data-en="What this tells you" data-ar="ماذا يُظهر هذا">What this tells you</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Which partner drives engagement, and at what cost?" data-ar="أي شريك يقود التفاعل وبأي تكلفة؟">Which partner drives engagement, and at what cost?</span></li>
+                <li><span data-en="Where is concentration or high cost?" data-ar="أين يوجد تركّز أو تكلفة مرتفعة؟">Where is concentration or high cost?</span></li>
+                <li><span data-en="Who to expand with, and who needs an improvement plan?" data-ar="مع من نتوسّع ومن يحتاج خطة تحسين؟">Who to expand with, and who needs an improvement plan?</span></li>
+              </ul>
+            </section>
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg> <span data-en="Recommended actions" data-ar="الإجراءات المقترحة">Recommended actions</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Approve onboarding partners to reduce concentration." data-ar="اعتماد ضمّ شركاء لتقليل التركّز.">Approve onboarding partners to reduce concentration.</span></li>
+                <li><span data-en="Reassess high-cost conversions." data-ar="إعادة تقييم التحويلات مرتفعة التكلفة.">Reassess high-cost conversions.</span></li>
+                <li><span data-en="Address the lowest-rated partner experience." data-ar="معالجة تجربة الشريك الأدنى تقييماً.">Address the lowest-rated partner experience.</span></li>
+              </ul>
+            </section>
+          </div>
+        </main>
+        <footer class="app-footer"><span data-en="Hayyoh · Merchants &amp; Partners" data-ar="حيّوه · التجار والشركاء">Hayyoh · Merchants &amp; Partners</span>
+        </footer>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="kpi-drawer" role="dialog" aria-modal="true" aria-labelledby="kpi-drawer-title" aria-label="Details" data-i18n-label="details"></aside>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/period-picker.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/pages/merchants-partners.js"></script>
+  </body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Operations &amp; Governance — Hayyoh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/preferences.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span class="brand-mark" aria-hidden="true">H</span>
+          <div class="brand-text"><span class="brand-name">Hayyoh</span><span class="brand-caption"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span>
+          </div>
+          <button type="button" class="icon-button sidebar-close" id="sidebar-close" aria-label="Close navigation" data-i18n-label="closeNavigation">✕</button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation" data-i18n-label="mainNavigation">
+          <p class="nav-section"><span data-en="Overview" data-ar="نظرة عامة">Overview</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span class="nav-label"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span></a></li>
+            <li><a class="nav-link" href="weekly-report.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span class="nav-label"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></span></a></li>
+          </ul>
+          <p class="nav-section"><span data-en="Performance" data-ar="الأداء">Performance</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="users-engagement.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg><span class="nav-label"><span data-en="Users &amp; Engagement" data-ar="المستخدمون والتفاعل">Users &amp; Engagement</span></span></a></li>
+            <li><a class="nav-link" href="events-tickets.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/></svg><span class="nav-label"><span data-en="Events &amp; Tickets" data-ar="الفعاليات والتذاكر">Events &amp; Tickets</span></span></a></li>
+            <li><a class="nav-link" href="points-loyalty.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg><span class="nav-label"><span data-en="Points &amp; Loyalty" data-ar="النقاط والولاء">Points &amp; Loyalty</span></span></a></li>
+            <li><a class="nav-link" href="offers-rewards.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg><span class="nav-label"><span data-en="Offers &amp; Rewards" data-ar="العروض والمكافآت">Offers &amp; Rewards</span></span></a></li>
+            <li><a class="nav-link" href="merchants-partners.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><span class="nav-label"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></span></a></li>
+            <li><a class="nav-link" href="finance-value.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg><span class="nav-label"><span data-en="Finance &amp; Value" data-ar="المالية والقيمة">Finance &amp; Value</span></span></a></li>
+            <li><a class="nav-link is-active" href="operations-governance.html" aria-current="page"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg><span class="nav-label"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></span></a></li>
+            <li><a class="nav-link" href="near-redemption.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5L21 12.5 12.5 21z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span class="nav-label"><span data-en="Near-Redemption &amp; NBA" data-ar="القرب من العروض">Near-Redemption &amp; NBA</span></span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <button type="button" class="sidebar-collapse" id="sidebar-collapse" aria-pressed="false" aria-label="Collapse sidebar"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg><span class="nav-label"><span data-en="Collapse" data-ar="طي القائمة">Collapse</span></span></button>
+        </div>
+      </aside>
+      <div class="app-main">
+        <header class="app-header">
+          <button type="button" class="icon-button menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation" data-i18n-label="openNavigation"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="header-brand"><span class="brand-mark brand-mark-small" aria-hidden="true">H</span><span class="brand-name">Hayyoh</span>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="icon-button" id="theme-toggle" aria-label="Switch to light mode"><svg class="icon-sun" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><span class="visually-hidden" id="theme-status" aria-live="polite"></span>
+            <button type="button" class="icon-button language-toggle" id="language-toggle" lang="en" aria-label="Switch to Arabic">AR</button><span class="avatar" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          </div>
+        </header>
+        <div class="page-toolbar">
+          <div class="page-heading">
+            <nav aria-label="Breadcrumb" data-i18n-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="index.html"><span data-en="Home" data-ar="الرئيسية">Home</span></a></li>
+                <li aria-current="page"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></li>
+              </ol>
+            </nav>
+            <h1 class="page-title"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></h1>
+            <p class="page-description"><span data-en="System and integration health, incidents, reconciliation, privileged access, risks and service-level compliance." data-ar="صحة الأنظمة والتكاملات والحوادث والتسوية والوصول المميز والمخاطر والالتزام بمستويات الخدمة.">System and integration health, incidents, reconciliation, privileged access, risks and service-level compliance.</span></p>
+          </div>
+          <div class="period-picker" id="period-picker">
+            <button type="button" class="period-trigger" id="period-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="period-menu" aria-label="Select reporting period" data-i18n-label="selectPeriod"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span class="period-label" id="period-label">Since launch</span><svg class="period-chevron" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="period-menu" id="period-menu" role="dialog" aria-labelledby="period-heading" hidden>
+              <p class="period-heading" id="period-heading"><span data-en="Period" data-ar="الفترة">Period</span></p>
+              <div class="period-options" role="radiogroup" aria-labelledby="period-heading">
+                <button type="button" role="radio" class="period-option" data-period="all" aria-checked="true"><span class="period-check" aria-hidden="true">✓</span><span data-en="Since launch" data-ar="منذ الإطلاق">Since launch</span></button>
+                <button type="button" role="radio" class="period-option" data-period="w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="This week" data-ar="هذا الأسبوع">This week</span></button>
+                <button type="button" role="radio" class="period-option" data-period="4w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 4 weeks" data-ar="آخر 4 أسابيع">Last 4 weeks</span></button>
+                <button type="button" role="radio" class="period-option" data-period="m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last month" data-ar="الشهر الماضي">Last month</span></button>
+                <button type="button" role="radio" class="period-option" data-period="3m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 3 months" data-ar="آخر 3 أشهر">Last 3 months</span></button>
+                <button type="button" role="radio" class="period-option" data-period="custom" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Custom range" data-ar="فترة مخصصة">Custom range</span></button>
+              </div>
+              <div class="period-custom" id="period-custom" hidden>
+                <label class="period-field"><span data-en="From" data-ar="من">From</span><input type="date" id="period-from" value="2026-08-16" min="2026-08-16" max="2026-10-11"></label>
+                <label class="period-field"><span data-en="To" data-ar="إلى">To</span><input type="date" id="period-to" value="2026-10-11" min="2026-08-16" max="2026-10-11"></label>
+                <p class="period-error" id="period-error" role="alert" hidden></p>
+                <p class="period-hint"><span data-en="Available data: 16 Aug to 11 Oct 2026." data-ar="البيانات المتاحة: 16 أغسطس إلى 11 أكتوبر 2026.">Available data: 16 Aug to 11 Oct 2026.</span></p>
+                <div class="period-actions">
+                  <button type="button" class="button button-light" id="period-cancel"><span data-en="Cancel" data-ar="إلغاء">Cancel</span></button>
+                  <button type="button" class="button button-primary" id="period-apply"><span data-en="Apply" data-ar="تطبيق">Apply</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="app-content" id="main-content">
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="system-availability" role="button" tabindex="0" aria-label="System availability details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="System availability" data-ar="توافر النظام">System availability</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Monthly uptime across services.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
+              </div>
+              <p class="kpi-value">99.9%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 3.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.8 27.4,15.9 41.1,15.6 54.9,12.0 68.6,9.2 82.3,5.7 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 99.8%</p>
+              <div class="kpi-footer"><span class="kpi-period">30 days</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="api-availability" role="button" tabindex="0" aria-label="API availability details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="API availability" data-ar="توافر الواجهات البرمجية">API availability</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Availability of critical APIs.</span></span></span><span class="kpi-icon kpi-icon-blue"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M7 8h10v3a5 5 0 0 1-10 0z M12 16v6"/></svg></span>
+              </div>
+              <p class="kpi-value">99.9%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 2.3%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.6 27.4,15.8 41.1,15.1 54.9,12.1 68.6,7.3 82.3,4.5 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 99.8%</p>
+              <div class="kpi-footer"><span class="kpi-period">30 days</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="transaction-success" role="button" tabindex="0" aria-label="Transaction success details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Transaction success" data-ar="نجاح المعاملات">Transaction success</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Processed without failure.</span></span></span><span class="kpi-icon kpi-icon-amber"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
+              </div>
+              <p class="kpi-value">99.6%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 2.3%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.4 27.4,18.3 41.1,15.8 54.9,11.1 68.6,8.2 82.3,4.6 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Healthy" data-ar="سليم">Healthy</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 99.5%</p>
+              <div class="kpi-footer"><span class="kpi-period">7 days</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="failed-transactions" role="button" tabindex="0" aria-label="Failed transactions details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Failed transactions" data-ar="المعاملات الفاشلة">Failed transactions</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Failed or reversed.</span></span></span><span class="kpi-icon kpi-icon-red"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></span>
+              </div>
+              <p class="kpi-value">0.4%</p>
+              <div class="kpi-trend"><span class="delta is-negative">▲ 2.6%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,21.2 27.4,19.4 41.1,15.7 54.9,12.1 68.6,10.3 82.3,4.8 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Within range" data-ar="ضمن المعدل">Within range</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≤ 0.5%</p>
+              <div class="kpi-footer"><span class="kpi-period">7 days</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="open-incidents" role="button" tabindex="0" aria-label="Open incidents details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Open incidents" data-ar="الحوادث المفتوحة">Open incidents</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Incidents currently open.</span></span></span><span class="kpi-icon kpi-icon-purple"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></span>
+              </div>
+              <p class="kpi-value">3</p>
+              <div class="kpi-trend"><span class="delta is-negative">▲ 4.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,18.5 27.4,16.9 41.1,15.0 54.9,12.1 68.6,8.7 82.3,6.2 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Watch" data-ar="للمتابعة">Watch</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Live</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="sla-compliance" role="button" tabindex="0" aria-label="SLA compliance details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="SLA compliance" data-ar="الالتزام باتفاقية الخدمة">SLA compliance</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Share meeting SLA targets.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
+              </div>
+              <p class="kpi-value">96.2%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 2.8%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,21.6 27.4,16.2 41.1,13.3 54.9,12.9 68.6,7.5 82.3,5.0 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 90%</p>
+              <div class="kpi-footer"><span class="kpi-period">Live</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="system-reconciliation" role="button" tabindex="0" aria-label="System reconciliation details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="System reconciliation" data-ar="مطابقة الأنظمة">System reconciliation</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Differences between systems needing reconciliation.</span></span></span><span class="kpi-icon kpi-icon-amber"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
+              </div>
+              <p class="kpi-value">1 open</p>
+              <div class="kpi-trend"><span class="delta is-negative">▲ 6.4%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.9 27.4,16.6 41.1,13.7 54.9,10.9 68.6,10.1 82.3,7.3 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Monitored" data-ar="مُراقَب">Monitored</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Live</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="privileged-access-review" role="button" tabindex="0" aria-label="Privileged-access review details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Privileged-access review" data-ar="مراجعة الصلاحيات المرتفعة">Privileged-access review</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Active privileged sessions, all authorised.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
+              </div>
+              <p class="kpi-value">2 sessions</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 2.6%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,19.9 27.4,16.8 41.1,14.4 54.9,12.3 68.6,9.6 82.3,4.7 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Controlled" data-ar="مُحكم">Controlled</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">Live</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Transaction volume by week" data-ar="حجم المعاملات أسبوعياً">Transaction volume by week</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="inVol" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="inVol" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="inVol" class="chart" role="img" aria-label="Transaction volume by week"></div>
+              <div id="inVol-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Transaction volume by week</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Transactions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>42,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>44,400</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>46,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>48,800</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>51,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>53,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>55,400</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>57,600</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Integrations by status" data-ar="التكاملات حسب الحالة">Integrations by status</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="inStat" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="inStat" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="inStat" class="chart" role="img" aria-label="Integrations by status"></div>
+              <div id="inStat-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Integrations by status</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">Count</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Operational</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>Degraded</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Down</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card">
+              <h2 class="card-title"><span data-en="Integration inventory" data-ar="سجل التكاملات">Integration inventory</span></h2>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Integration</th>
+                      <th scope="col">Availability</th>
+                      <th scope="col">Last sync</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ticketing API (Ticketmaster / QSL)</td>
+                      <td>99.9%</td>
+                      <td>2 min ago</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Speed gates / ticket readers</td>
+                      <td>99.7%</td>
+                      <td>live</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>National identity service</td>
+                      <td>99.9%</td>
+                      <td>5 min ago</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Guardian verification service</td>
+                      <td>99.6%</td>
+                      <td>11 min ago</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Strategic partners (Ooredoo, Qatar Airways)</td>
+                      <td>99.8%</td>
+                      <td>3 min ago</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>MS Entra ID SSO / IAM</td>
+                      <td>100%</td>
+                      <td>live</td>
+                      <td><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span>Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>In-app AI assistant (Azure)</td>
+                      <td>–</td>
+                      <td>–</td>
+                      <td><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>In build</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="card">
+              <h2 class="card-title"><span data-en="Risk, anomaly &amp; service-level register" data-ar="سجل المخاطر والشذوذ ومستويات الخدمة">Risk, anomaly &amp; service-level register</span></h2>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Area</th>
+                      <th scope="col">Check / alert</th>
+                      <th scope="col">Severity</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Finance / Points</td>
+                      <td>Duplicate redemption (ID masked), 4 min apart</td>
+                      <td>High</td>
+                      <td>Open</td>
+                    </tr>
+                    <tr>
+                      <td>Rewards</td>
+                      <td>High-value redemption manual review</td>
+                      <td>Medium</td>
+                      <td>Open</td>
+                    </tr>
+                    <tr>
+                      <td>Governance</td>
+                      <td>Service-level obligations tracking</td>
+                      <td>Medium</td>
+                      <td>Monitored</td>
+                    </tr>
+                    <tr>
+                      <td>Events</td>
+                      <td>Attendance reconciliation 82.3% matched</td>
+                      <td>Medium</td>
+                      <td>Monitored</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2 decision-grid">
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg> <span data-en="What this tells you" data-ar="ماذا يُظهر هذا">What this tells you</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Are systems reliable enough to trust the numbers?" data-ar="هل الأنظمة موثوقة بما يكفي للوثوق بالأرقام؟">Are systems reliable enough to trust the numbers?</span></li>
+                <li><span data-en="Where do failures concentrate and how do they affect users?" data-ar="أين تتركّز الأعطال وما أثرها على المستخدم؟">Where do failures concentrate and how do they affect users?</span></li>
+                <li><span data-en="Which open risks and obligations require escalation?" data-ar="ما المخاطر والالتزامات المفتوحة التي تستوجب تصعيداً؟">Which open risks and obligations require escalation?</span></li>
+              </ul>
+            </section>
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg> <span data-en="Recommended actions" data-ar="الإجراءات المقترحة">Recommended actions</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Prioritise fixes affecting points and attendance accuracy." data-ar="إعطاء الأولوية لإصلاح ما يؤثّر على دقة النقاط والحضور.">Prioritise fixes affecting points and attendance accuracy.</span></li>
+                <li><span data-en="Approve extra capacity at peak times." data-ar="اعتماد سعة إضافية في أوقات الذروة.">Approve extra capacity at peak times.</span></li>
+                <li><span data-en="Set closure dates for obligations." data-ar="تحديد مواعيد إغلاق الالتزامات.">Set closure dates for obligations.</span></li>
+              </ul>
+            </section>
+          </div>
+        </main>
+        <footer class="app-footer"><span data-en="Hayyoh · Operations &amp; Governance" data-ar="حيّوه · التشغيل والحوكمة">Hayyoh · Operations &amp; Governance</span>
+        </footer>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="kpi-drawer" role="dialog" aria-modal="true" aria-labelledby="kpi-drawer-title" aria-label="Details" data-i18n-label="details"></aside>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/period-picker.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/pages/operations-governance.js"></script>
+  </body>
+</html>

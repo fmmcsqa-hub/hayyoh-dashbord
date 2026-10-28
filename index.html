@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Hayyoh Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/preferences.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span class="brand-mark" aria-hidden="true">H</span>
+          <div class="brand-text"><span class="brand-name">Hayyoh</span><span class="brand-caption"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span>
+          </div>
+          <button type="button" class="icon-button sidebar-close" id="sidebar-close" aria-label="Close navigation" data-i18n-label="closeNavigation">✕</button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Main navigation" data-i18n-label="mainNavigation">
+          <p class="nav-section"><span data-en="Overview" data-ar="نظرة عامة">Overview</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link is-active" href="index.html" aria-current="page"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span class="nav-label"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></span></a></li>
+            <li><a class="nav-link" href="weekly-report.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span class="nav-label"><span data-en="Weekly Report" data-ar="التقرير الأسبوعي">Weekly Report</span></span></a></li>
+          </ul>
+          <p class="nav-section"><span data-en="Performance" data-ar="الأداء">Performance</span></p>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="users-engagement.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg><span class="nav-label"><span data-en="Users &amp; Engagement" data-ar="المستخدمون والتفاعل">Users &amp; Engagement</span></span></a></li>
+            <li><a class="nav-link" href="events-tickets.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/></svg><span class="nav-label"><span data-en="Events &amp; Tickets" data-ar="الفعاليات والتذاكر">Events &amp; Tickets</span></span></a></li>
+            <li><a class="nav-link" href="points-loyalty.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg><span class="nav-label"><span data-en="Points &amp; Loyalty" data-ar="النقاط والولاء">Points &amp; Loyalty</span></span></a></li>
+            <li><a class="nav-link" href="offers-rewards.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg><span class="nav-label"><span data-en="Offers &amp; Rewards" data-ar="العروض والمكافآت">Offers &amp; Rewards</span></span></a></li>
+            <li><a class="nav-link" href="merchants-partners.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><span class="nav-label"><span data-en="Merchants &amp; Partners" data-ar="التجار والشركاء">Merchants &amp; Partners</span></span></a></li>
+            <li><a class="nav-link" href="finance-value.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg><span class="nav-label"><span data-en="Finance &amp; Value" data-ar="المالية والقيمة">Finance &amp; Value</span></span></a></li>
+            <li><a class="nav-link" href="operations-governance.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg><span class="nav-label"><span data-en="Operations &amp; Governance" data-ar="التشغيل والحوكمة">Operations &amp; Governance</span></span></a></li>
+            <li><a class="nav-link" href="near-redemption.html"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5L21 12.5 12.5 21z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span class="nav-label"><span data-en="Near-Redemption &amp; NBA" data-ar="القرب من العروض">Near-Redemption &amp; NBA</span></span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <button type="button" class="sidebar-collapse" id="sidebar-collapse" aria-pressed="false" aria-label="Collapse sidebar"><svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg><span class="nav-label"><span data-en="Collapse" data-ar="طي القائمة">Collapse</span></span></button>
+        </div>
+      </aside>
+      <div class="app-main">
+        <header class="app-header">
+          <button type="button" class="icon-button menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation" data-i18n-label="openNavigation"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="header-brand"><span class="brand-mark brand-mark-small" aria-hidden="true">H</span><span class="brand-name">Hayyoh</span>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="icon-button" id="theme-toggle" aria-label="Switch to light mode"><svg class="icon-sun" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><span class="visually-hidden" id="theme-status" aria-live="polite"></span>
+            <button type="button" class="icon-button language-toggle" id="language-toggle" lang="en" aria-label="Switch to Arabic">AR</button><span class="avatar" aria-hidden="true"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          </div>
+        </header>
+        <div class="page-toolbar">
+          <div class="page-heading">
+            <nav aria-label="Breadcrumb" data-i18n-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="index.html"><span data-en="Home" data-ar="الرئيسية">Home</span></a></li>
+                <li aria-current="page"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></li>
+              </ol>
+            </nav>
+            <h1 class="page-title"><span data-en="Dashboard" data-ar="لوحة المعلومات">Dashboard</span></h1>
+            <p class="page-description"><span data-en="Performance, growth, engagement and key areas requiring attention." data-ar="الأداء والنمو والتفاعل وأبرز المجالات التي تتطلب المتابعة.">Performance, growth, engagement and key areas requiring attention.</span></p>
+          </div>
+          <div class="period-picker" id="period-picker">
+            <button type="button" class="period-trigger" id="period-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="period-menu" aria-label="Select reporting period" data-i18n-label="selectPeriod"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span class="period-label" id="period-label">Since launch</span><svg class="period-chevron" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div class="period-menu" id="period-menu" role="dialog" aria-labelledby="period-heading" hidden>
+              <p class="period-heading" id="period-heading"><span data-en="Period" data-ar="الفترة">Period</span></p>
+              <div class="period-options" role="radiogroup" aria-labelledby="period-heading">
+                <button type="button" role="radio" class="period-option" data-period="all" aria-checked="true"><span class="period-check" aria-hidden="true">✓</span><span data-en="Since launch" data-ar="منذ الإطلاق">Since launch</span></button>
+                <button type="button" role="radio" class="period-option" data-period="w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="This week" data-ar="هذا الأسبوع">This week</span></button>
+                <button type="button" role="radio" class="period-option" data-period="4w" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 4 weeks" data-ar="آخر 4 أسابيع">Last 4 weeks</span></button>
+                <button type="button" role="radio" class="period-option" data-period="m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last month" data-ar="الشهر الماضي">Last month</span></button>
+                <button type="button" role="radio" class="period-option" data-period="3m" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Last 3 months" data-ar="آخر 3 أشهر">Last 3 months</span></button>
+                <button type="button" role="radio" class="period-option" data-period="custom" aria-checked="false"><span class="period-check" aria-hidden="true">✓</span><span data-en="Custom range" data-ar="فترة مخصصة">Custom range</span></button>
+              </div>
+              <div class="period-custom" id="period-custom" hidden>
+                <label class="period-field"><span data-en="From" data-ar="من">From</span><input type="date" id="period-from" value="2026-08-16" min="2026-08-16" max="2026-10-11"></label>
+                <label class="period-field"><span data-en="To" data-ar="إلى">To</span><input type="date" id="period-to" value="2026-10-11" min="2026-08-16" max="2026-10-11"></label>
+                <p class="period-error" id="period-error" role="alert" hidden></p>
+                <p class="period-hint"><span data-en="Available data: 16 Aug to 11 Oct 2026." data-ar="البيانات المتاحة: 16 أغسطس إلى 11 أكتوبر 2026.">Available data: 16 Aug to 11 Oct 2026.</span></p>
+                <div class="period-actions">
+                  <button type="button" class="button button-light" id="period-cancel"><span data-en="Cancel" data-ar="إلغاء">Cancel</span></button>
+                  <button type="button" class="button button-primary" id="period-apply"><span data-en="Apply" data-ar="تطبيق">Apply</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="app-content" id="main-content">
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="registered-users" data-series="[41200, 45800, 49100, 52400, 54900, 56800, 58100, 59000, 59665]" data-aggregate="last" data-format="integer" role="button" tabindex="0" aria-label="Registered users details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Registered users" data-ar="المستخدمون المسجّلون">Registered users</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Total account holders registered on Hayyoh since launch.</span></span></span><span class="kpi-icon kpi-icon-blue"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M22 20a6 6 0 0 0-4-5.6"/></svg></span>
+              </div>
+              <p class="kpi-value">59,665</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 1.1%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 12.0,18.0 24.0,14.4 36.0,10.9 48.0,8.2 60.0,6.1 72.0,4.7 84.0,3.7 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="Growing" data-ar="ينمو">Growing</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> 80,000 by Dec</p>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="active-users" data-series="[24900, 27100, 28600, 30000, 30900, 31500, 31900, 32100, 32400]" data-aggregate="last" data-format="integer" role="button" tabindex="0" aria-label="Active users details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Active users" data-ar="المستخدمون النشطون">Active users</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Users with a qualifying action (check-in, earn, redeem) in 30 days.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
+              </div>
+              <p class="kpi-value">32,400</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 0.9%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 12.0,17.1 24.0,13.1 36.0,9.4 48.0,7.0 60.0,5.4 72.0,4.3 84.0,3.8 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>54% of base</span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 65%</p>
+              <div class="kpi-footer"><span class="kpi-period">30 days</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="total-operations" role="button" tabindex="0" aria-label="Total operations details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Total operations" data-ar="إجمالي العمليات">Total operations</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Sum of check-ins, points-earn and redemption events (platform activity, not payments).</span></span></span><span class="kpi-icon kpi-icon-amber"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+              <p class="kpi-value">2,418,650</p>
+              <div class="kpi-status"><span class="status status-info"><span class="status-mark" aria-hidden="true">◆</span><span data-en="Monitor" data-ar="مراقبة">Monitor</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="points-redemption-rate" role="button" tabindex="0" aria-label="Points redemption rate details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Points redemption rate" data-ar="معدل استبدال النقاط">Points redemption rate</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Points redeemed as a share of points issued.</span></span></span><span class="kpi-icon kpi-icon-purple"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v6c0 1.7 2.7 3 6 3s6-1.3 6-3V6"/><path d="M15 12.5c2.8.3 6 1.4 6 3.5 0 1.7-2.7 3-6 3s-6-1.3-6-3"/></svg></span>
+              </div>
+              <p class="kpi-value">1.75%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 6.1%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.6 27.4,17.4 41.1,14.2 54.9,11.0 68.6,9.8 82.3,7.0 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Low burn" data-ar="استبدال منخفض">Low burn</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 8%</p>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-4">
+            <article class="kpi" data-detail="attendance-via-hayyoh" role="button" tabindex="0" aria-label="Attendance via Hayyoh details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Attendance via Hayyoh" data-ar="الحضور عبر حيّوه">Attendance via Hayyoh</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Stadium attendance checked in through Hayyoh (160,229 of 194,795).</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
+              </div>
+              <p class="kpi-value">82.3%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 6.1%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,20.6 27.4,15.7 41.1,15.0 54.9,10.1 68.6,8.7 82.3,7.0 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Attention" data-ar="يحتاج انتباه">Attention</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 90%</p>
+              <div class="kpi-footer"><span class="kpi-period">24 matches</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="reward-fulfilment" role="button" tabindex="0" aria-label="Reward fulfilment details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Reward fulfilment" data-ar="تنفيذ المكافآت">Reward fulfilment</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Redeemed rewards confirmed used or delivered.</span></span></span><span class="kpi-icon kpi-icon-teal"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10 3 7.5 4 9 8 12 8m0 0s2-5 4.5-4S15 8 12 8"/></svg></span>
+              </div>
+              <p class="kpi-value">99 of 193</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 2.8%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,22.3 27.4,18.5 41.1,14.8 54.9,11.0 68.6,8.4 82.3,5.1 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span>51%</span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">To 11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="verified-users" role="button" tabindex="0" aria-label="Verified users details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Verified users" data-ar="المستخدمون الموثّقون">Verified users</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Share of registered users verified.</span></span></span><span class="kpi-icon kpi-icon-red"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/></svg></span>
+              </div>
+              <p class="kpi-value">40.4%</p>
+              <div class="kpi-trend"><span class="delta is-positive">▲ 5.0%</span>
+                <svg class="spark" width="96" height="26" viewBox="0 0 96 26" aria-hidden="true" focusable="false"><polyline points="0.0,23.0 13.7,18.6 27.4,15.3 41.1,14.3 54.9,11.2 68.6,8.5 82.3,6.2 96.0,3.0" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="96.0" cy="3.0" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <div class="kpi-status"><span class="status status-red"><span class="status-mark" aria-hidden="true">■</span><span data-en="Critical" data-ar="حرج">Critical</span></span>
+              </div>
+              <p class="kpi-target"><span data-en="Target:" data-ar="المستهدف:">Target:</span> ≥ 70%</p>
+              <div class="kpi-footer"><span class="kpi-period">11 Oct</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+            <article class="kpi" data-detail="programme-health" role="button" tabindex="0" aria-label="Programme health details">
+              <div class="kpi-head"><span class="kpi-title"><span data-en="Programme health" data-ar="صحة البرنامج">Programme health</span><span class="kpi-hint" aria-hidden="true">i<span class="kpi-hint-text">Composite of adoption, engagement, service and assurance.</span></span></span><span class="kpi-icon kpi-icon-purple"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></span>
+              </div>
+              <p class="kpi-value">Attention</p>
+              <div class="kpi-status"><span class="status status-amber"><span class="status-mark" aria-hidden="true">▲</span><span data-en="Attention" data-ar="يحتاج انتباه">Attention</span></span>
+              </div>
+              <div class="kpi-footer"><span class="kpi-period">This week</span><span class="kpi-link"><span data-en="View breakdown" data-ar="عرض التفاصيل">View breakdown</span> <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>
+              </div>
+            </article>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Registered vs active users (weekly)" data-ar="المسجّلون مقابل النشطين (أسبوعياً)">Registered vs active users (weekly)</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="ovReg" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="ovReg" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="ovReg" class="chart" role="img" aria-label="Registered vs active users (weekly)"></div>
+              <div id="ovReg-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Registered vs active users (weekly)</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Registered</th>
+                        <th scope="col">Active</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>41,200</td>
+                        <td>24,900</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>45,800</td>
+                        <td>27,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>49,100</td>
+                        <td>28,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>52,400</td>
+                        <td>30,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>54,900</td>
+                        <td>30,900</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>56,800</td>
+                        <td>31,500</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>58,100</td>
+                        <td>31,900</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>59,000</td>
+                        <td>32,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>59,665</td>
+                        <td>32,400</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Points issued (cumulative, m) vs redeemed (weekly)" data-ar="النقاط المُصدَرة (تراكمي) مقابل المستبدَلة (أسبوعياً)">Points issued (cumulative, m) vs redeemed (weekly)</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="ovIssRed" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="ovIssRed" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="ovIssRed" class="chart" role="img" aria-label="Points issued (cumulative, m) vs redeemed (weekly)"></div>
+              <div id="ovIssRed-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Points issued (cumulative, m) vs redeemed (weekly)</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Issued (m)</th>
+                        <th scope="col">Redeemed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>14</td>
+                        <td>4,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>28</td>
+                        <td>63,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>46</td>
+                        <td>201,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>69</td>
+                        <td>663,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>86</td>
+                        <td>403,000</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>98</td>
+                        <td>312,400</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>110</td>
+                        <td>109,800</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>118</td>
+                        <td>352,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>124.3</td>
+                        <td>65,100</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Stadium attendance by week" data-ar="حضور الملعب أسبوعياً">Stadium attendance by week</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="ovAtt" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="ovAtt" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="ovAtt" class="chart" role="img" aria-label="Stadium attendance by week"></div>
+              <div id="ovAtt-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Stadium attendance by week</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Attendance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Week 1</td>
+                        <td>52,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 2</td>
+                        <td>50,300</td>
+                      </tr>
+                      <tr>
+                        <td>Week 3</td>
+                        <td>49,800</td>
+                      </tr>
+                      <tr>
+                        <td>Week 4</td>
+                        <td>49,100</td>
+                      </tr>
+                      <tr>
+                        <td>Week 5</td>
+                        <td>48,600</td>
+                      </tr>
+                      <tr>
+                        <td>Week 6</td>
+                        <td>48,200</td>
+                      </tr>
+                      <tr>
+                        <td>Week 7</td>
+                        <td>47,900</td>
+                      </tr>
+                      <tr>
+                        <td>Week 8</td>
+                        <td>49,060</td>
+                      </tr>
+                      <tr>
+                        <td>Week 9</td>
+                        <td>47,854</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="card chart-card">
+              <div class="card-header">
+                <h2 class="card-title"><span data-en="Engagement funnel" data-ar="قمع التفاعل">Engagement funnel</span></h2>
+                <div class="view-switch" role="group" aria-label="Chart or table view" data-i18n-label="viewSwitch">
+                  <button type="button" data-view="chart" data-view-for="ovFun" aria-pressed="true"><span data-en="Chart" data-ar="الرسم البياني">Chart</span></button>
+                  <button type="button" data-view="table" data-view-for="ovFun" aria-pressed="false"><span data-en="Table" data-ar="الجدول">Table</span></button>
+                </div>
+              </div>
+              <div id="ovFun" class="chart" role="img" aria-label="Engagement funnel"></div>
+              <div id="ovFun-table" hidden>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption class="visually-hidden">Engagement funnel</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Stage</th>
+                        <th scope="col">Users</th>
+                        <th scope="col">% of registered</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Registered</td>
+                        <td>59,665</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>Verified</td>
+                        <td>24,081</td>
+                        <td>40.4%</td>
+                      </tr>
+                      <tr>
+                        <td>Active (30d)</td>
+                        <td>32,400</td>
+                        <td>54.3%</td>
+                      </tr>
+                      <tr>
+                        <td>Earning points</td>
+                        <td>12,079</td>
+                        <td>20.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Redeemed a reward</td>
+                        <td>187</td>
+                        <td>0.3%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2">
+            <section class="card">
+              <h2 class="card-title"><span data-en="Top 5 improved / declined" data-ar="أعلى 5 تحسناً/تراجعاً">Top 5 improved / declined</span></h2>
+              <ul class='bul'>
+                <li><span class="status status-green"><span class="status-mark" aria-hidden="true">●</span><span data-en="On track" data-ar="على المسار">On track</span></span> Instagram reach, attendance coverage, 1,000+ pts holders, verified count, redemptions/week improved.</li>
+                <li><span class="status status-red"><span class="status-mark" aria-hidden="true">■</span><span data-en="Critical" data-ar="حرج">Critical</span></span> Attendance MoM, first-contact resolution, repeat-caller share, active-share, offer utilisation declined.</li>
+              </ul>
+            </section>
+            <section class="card">
+              <h2 class="card-title"><span data-en="Next steps" data-ar="الخطوات التالية">Next steps</span></h2>
+              <ol class='bul num'>
+                <li>Approve the verification drive.</li>
+                <li>Approve a redemption campaign and liability ceiling.</li>
+                <li>Approve Q4 reward budget and restock.</li>
+                <li>Approve onboarding of two new partners.</li>
+              </ol>
+            </section>
+          </div>
+          <div class="dashboard-grid dashboard-grid-2 decision-grid">
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg> <span data-en="What this tells you" data-ar="ماذا يُظهر هذا">What this tells you</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Is the programme growing, and does growth convert to active, verified users?" data-ar="هل البرنامج ينمو، وهل يتحوّل النمو إلى مستخدمين نشطين وموثّقين؟">Is the programme growing, and does growth convert to active, verified users?</span></li>
+                <li><span data-en="Where is unredeemed value building up and how large is the liability?" data-ar="أين تتراكم القيمة غير المستبدَلة وما حجم الالتزام؟">Where is unredeemed value building up and how large is the liability?</span></li>
+                <li><span data-en="Which issue needs intervention now?" data-ar="ما القضية التي تحتاج تدخّلاً الآن؟">Which issue needs intervention now?</span></li>
+              </ul>
+            </section>
+            <section class="decision">
+              <h2 class="decision-title"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg> <span data-en="Recommended actions" data-ar="الإجراءات المقترحة">Recommended actions</span></h2>
+              <ul class="bullet-list">
+                <li><span data-en="Set targets for verification, activation and redemption." data-ar="تحديد مستهدفات التوثيق والتنشيط والاستبدال.">Set targets for verification, activation and redemption.</span></li>
+                <li><span data-en="Approve campaigns and budget to close the biggest gap." data-ar="اعتماد الحملات والموازنة لسدّ أكبر فجوة.">Approve campaigns and budget to close the biggest gap.</span></li>
+                <li><span data-en="Direct attention to the highest-impact exception." data-ar="توجيه الانتباه للاستثناء الأعلى أثراً.">Direct attention to the highest-impact exception.</span></li>
+              </ul>
+            </section>
+          </div>
+        </main>
+        <footer class="app-footer"><span data-en="Hayyoh Dashboard" data-ar="لوحة معلومات حيّوه">Hayyoh Dashboard</span>
+        </footer>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="kpi-drawer" role="dialog" aria-modal="true" aria-labelledby="kpi-drawer-title" aria-label="Details" data-i18n-label="details"></aside>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/period-picker.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/pages/overview.js"></script>
+  </body>
+</html>
